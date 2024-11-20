@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecouplingKata", "DecouplingKata\DecouplingKata.csproj", "{7D07D12A-D06C-4214-AB15-A576FE2AE2A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecouplingKata.Tests", "DecouplingKata.Tests\DecouplingKata.Tests.csproj", "{FA5650BD-C9A7-4819-A066-D78FCBAD2550}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D07D12A-D06C-4214-AB15-A576FE2AE2A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D07D12A-D06C-4214-AB15-A576FE2AE2A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D07D12A-D06C-4214-AB15-A576FE2AE2A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D07D12A-D06C-4214-AB15-A576FE2AE2A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA5650BD-C9A7-4819-A066-D78FCBAD2550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA5650BD-C9A7-4819-A066-D78FCBAD2550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA5650BD-C9A7-4819-A066-D78FCBAD2550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA5650BD-C9A7-4819-A066-D78FCBAD2550}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
