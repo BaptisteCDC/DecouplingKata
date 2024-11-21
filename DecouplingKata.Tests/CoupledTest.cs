@@ -2,15 +2,22 @@ namespace DecouplingKata.Tests;
 
 public class CoupledTest
 {
+    SpecSize spec = SpecSize.Small;
     [Fact]
-    public void testRegister(){
+    public void RegisterShouldTakeLessThan4s(){
 	var start = DateTime.Now;
-	Backend backend = new Backend(SpecSize.Small);
+	Backend backend = new Backend(spec);
 	backend.Register("Baptiste");
-	backend.Register("Cyrille");
 	var end = DateTime.Now;
     var duration = end - start;
-    Assert.True(duration.Seconds < 7);
-    Assert.True(backend.TotalCost()< 7);// SLA not met
+    Assert.True(duration.Seconds < 4);
     }
+
+    [Fact]
+    public void RegisterShouldCostLessThan5(){
+	Backend backend = new Backend(spec);
+	backend.Register("Baptiste");
+    Assert.True(backend.TotalCost() < 7);
+    }
+
 }

@@ -13,7 +13,7 @@ public class RegistrationService
         int carbonCost = SpecSize == SpecSize.Large ? 10 : 3;
         Users.Append(username);
         CRM.createAccount(username);
-        Thread.Sleep(processingTime);
+        Thread.Sleep(processingTime * 1000);
         CostExplorer.append(carbonCost);
     }
 

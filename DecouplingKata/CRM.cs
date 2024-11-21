@@ -11,8 +11,8 @@ private readonly SpecSize SpecSize;
     public void createAccount(String username) {
     int processingTime = SpecSize == SpecSize.Large ? 1 : 3;
     int carbonCost = SpecSize == SpecSize.Large ? 10 : 3;
-        Users.Append(username);
-    Thread.Sleep(processingTime);
+    Users.Append(username);
+    Thread.Sleep(processingTime * 1000);
     CostExplorer.append(carbonCost);
 }
 
